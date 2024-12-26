@@ -1,3 +1,8 @@
+Developed by: r iswariya
+
+RegisterNumber: 24900725
+
+
 # BOOLEAN_FUNCTION_MINIMIZATION
 
 **AIM:**
@@ -15,9 +20,43 @@ Hardware – PCs, Cyclone II , USB flasher
 **Software – Quartus prime**
 
 **Theory**
-Boolean Algebra is a branch of algebra that deals with boolean values—true and false. It is fundamental to digital logic design and computer science, providing a mathematical framework for describing logical operations and expressions
+module exp1(A, B, C, D, W, X, Y, Z, F1, F2);
+
+input A, B, C, D,W,X,Y,Z;
+
+wire x1, x2,x3,x4, x5, x6, x7, x8, x9, x10;
+
+output F1, F2;
+
+assign x1=(~A)&(~B)&(~C)&(~D);
+
+assign x2=(A)&(~C)&(~D); 
+
+assign x3=(~B)&(C)&(~D);
+
+assign x4=(~A)&(B)&(C)&(D);
+
+assign x5=(B)&(~C)&(D);
+
+assign x6=(X)&(~Y)&(Z);
+
+assign x7=(~X)&(~Y)&(Z);
+
+assign x8=(~W)&(X)&(Y);
+
+assign x9=(W)&(~X)&(Y);
+
+assign x10=(W)&(X)&(Y);
+
+assign F1=x1|x2|x3|x4|x5;
+
+assign F2=x6|x7|x8|x9|x10;
+
+endmodule
 
 **Logic Diagram**
+
+![exp2 logic gates](https://github.com/user-attachments/assets/e912039a-441e-4d70-abc7-ccfe13349a47)
 
 **Procedure**
 
@@ -36,23 +75,22 @@ Boolean Algebra is a branch of algebra that deals with boolean values—true and
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by:ishwarya  RegisterNumber:*/24900725
+
 
 
 **RTL realization**
-![WhatsApp Image 2024-12-08 at 14 33 16_8295e36e](https://github.com/user-attachments/assets/dd294c19-8682-4fe1-b8d8-2c9497e0e47c)
 
+![EXP2 GATES](https://github.com/user-attachments/assets/979b5551-36f8-4db9-b999-75f8619cad92)
 
 **Output:**
-![WhatsApp Image 2024-12-08 at 14 33 17_e58ed8d7](https://github.com/user-attachments/assets/3b790fe2-3be7-407b-ba94-2c41047cb68d)
-![WhatsApp Image 2024-12-08 at 14 33 16_34d19687](https://github.com/user-attachments/assets/4ce13af7-f964-4794-b933-0c88c57400f8)
 
+![EXP2 WAVEFORM](https://github.com/user-attachments/assets/d342cffd-3b2f-4f19-8225-ce38f5f1cd06)
 
 **RTL**
-![WhatsApp Image 2024-12-08 at 14 33 16_010cf309](https://github.com/user-attachments/assets/1785c594-1910-49e3-b8a2-ecf76ecd6b0b)
 
-**Timing Diagram**
+![EXP2 CODE](https://github.com/user-attachments/assets/6fdc621b-25c0-4f4a-8e9d-798875b4e6fa)
+
 
 **Result:**
-Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
 
+Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
