@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/851b8630-e398-487a-9c27-c5f97c8083eb)Developed by: r iswariya
+Developed by: r iswariya
 
 RegisterNumber: 24900725
 
