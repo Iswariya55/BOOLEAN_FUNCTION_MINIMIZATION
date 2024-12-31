@@ -1,4 +1,4 @@
-Developed by: r iswariya
+![image](https://github.com/user-attachments/assets/851b8630-e398-487a-9c27-c5f97c8083eb)Developed by: r iswariya
 
 RegisterNumber: 24900725
 
@@ -20,43 +20,9 @@ Hardware – PCs, Cyclone II , USB flasher
 **Software – Quartus prime**
 
 **Theory**
-module exp1(A, B, C, D, W, X, Y, Z, F1, F2);
-
-input A, B, C, D,W,X,Y,Z;
-
-wire x1, x2,x3,x4, x5, x6, x7, x8, x9, x10;
-
-output F1, F2;
-
-assign x1=(~A)&(~B)&(~C)&(~D);
-
-assign x2=(A)&(~C)&(~D); 
-
-assign x3=(~B)&(C)&(~D);
-
-assign x4=(~A)&(B)&(C)&(D);
-
-assign x5=(B)&(~C)&(D);
-
-assign x6=(X)&(~Y)&(Z);
-
-assign x7=(~X)&(~Y)&(Z);
-
-assign x8=(~W)&(X)&(Y);
-
-assign x9=(W)&(~X)&(Y);
-
-assign x10=(W)&(X)&(Y);
-
-assign F1=x1|x2|x3|x4|x5;
-
-assign F2=x6|x7|x8|x9|x10;
-
-endmodule
-
-**Logic Diagram**
-
-![exp2 logic gates](https://github.com/user-attachments/assets/e912039a-441e-4d70-abc7-ccfe13349a47)
+Boolean Algebra is a branch of algebra that deals with boolean values—true and false. It
+is fundamental to digital logic design and computer science, providing a mathematical
+framework for describing logical operations and expressions
 
 **Procedure**
 
@@ -70,25 +36,37 @@ endmodule
 
 5.	For different input combinations generate the timing diagram.
 
+**Minimization**
+F1
+![WhatsApp Image 2024-12-31 at 04 35 29_26b326f9](https://github.com/user-attachments/assets/2a3a3cca-57da-4108-9ddc-46085a0da2ed)
+F2
+![WhatsApp Image 2024-12-31 at 04 38 57_9fe9597d](https://github.com/user-attachments/assets/066daf43-0f10-4de2-8581-0bb37cbc1ea6)
+
+**Truth Table**
+![Screenshot 2024-12-31 044411](https://github.com/user-attachments/assets/541bd49a-959c-45aa-8a52-3fad567e5b5b)
 
 **Program:**
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+ F1
+ module fun2a(a,b,c,d,f1);
+ input a,b,c,d;
+ output f1;
+ assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+ endmodule
+ F2
+ module fun2b(w,x,y,z,f2);
+ input w,x,y,z;
+ output f2;
+ assign f2=((~y&z)|(w&y)|(x&y));
+ endmodule
 
-
-
-
-**RTL realization**
-
-![EXP2 GATES](https://github.com/user-attachments/assets/979b5551-36f8-4db9-b999-75f8619cad92)
+**RTL**
+![Screenshot 2024-12-31 044739](https://github.com/user-attachments/assets/cd8d1999-29fa-41b0-baf6-aa748db422b8)
 
 **Output:**
 
-![EXP2 WAVEFORM](https://github.com/user-attachments/assets/d342cffd-3b2f-4f19-8225-ce38f5f1cd06)
-
-**RTL**
-
-![EXP2 CODE](https://github.com/user-attachments/assets/6fdc621b-25c0-4f4a-8e9d-798875b4e6fa)
+![Screenshot 2024-12-31 045024](https://github.com/user-attachments/assets/26890ad8-5e92-4dd5-834b-9105db7209ba)
 
 
 **Result:**
