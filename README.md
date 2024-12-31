@@ -20,6 +20,7 @@ Hardware – PCs, Cyclone II , USB flasher
 **Software – Quartus prime**
 
 **Theory**
+
 Boolean Algebra is a branch of algebra that deals with boolean values—true and false. It
 is fundamental to digital logic design and computer science, providing a mathematical
 framework for describing logical operations and expressions
@@ -37,12 +38,16 @@ framework for describing logical operations and expressions
 5.	For different input combinations generate the timing diagram.
 
 **Minimization**
+
 F1
+
 ![WhatsApp Image 2024-12-31 at 04 35 29_26b326f9](https://github.com/user-attachments/assets/2a3a3cca-57da-4108-9ddc-46085a0da2ed)
 F2
+
 ![WhatsApp Image 2024-12-31 at 04 38 57_9fe9597d](https://github.com/user-attachments/assets/066daf43-0f10-4de2-8581-0bb37cbc1ea6)
 
 **Truth Table**
+
 ![Screenshot 2024-12-31 044411](https://github.com/user-attachments/assets/541bd49a-959c-45aa-8a52-3fad567e5b5b)
 
 **Program:**
@@ -62,6 +67,7 @@ F2
  endmodule
 
 **RTL**
+
 ![Screenshot 2024-12-31 044739](https://github.com/user-attachments/assets/cd8d1999-29fa-41b0-baf6-aa748db422b8)
 
 **Output:**
