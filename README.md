@@ -54,17 +54,13 @@ F2
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
  F1
- module fun2a(a,b,c,d,f1);
- input a,b,c,d;
- output f1;
- assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
- endmodule
+
+ ![Screenshot 2025-01-02 165725](https://github.com/user-attachments/assets/843d43db-3f59-47e7-86c2-99c7c3148ca8)
+
  F2
- module fun2b(w,x,y,z,f2);
- input w,x,y,z;
- output f2;
- assign f2=((~y&z)|(w&y)|(x&y));
- endmodule
+ 
+ ![Screenshot 2025-01-02 165736](https://github.com/user-attachments/assets/374e654c-bbc8-473e-818b-db39ad2d7cf5)
+
 
 **RTL**
 
